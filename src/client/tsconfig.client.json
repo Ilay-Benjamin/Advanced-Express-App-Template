@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "target": "ES2017",
+        "rootDir": "./",
+        "outDir": "../../public/js",
+        "moduleResolution": "node",
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "./components",
+        "./pages",
+        "./utils",
+        "./index.ts"
+    ],
+    "exclude": [
+      "../../node_modules",
+    ],
+    "ts-node": {
+        "esm": true,
+        "experimentalSpecifierResolution": "node"
+    }
+  }

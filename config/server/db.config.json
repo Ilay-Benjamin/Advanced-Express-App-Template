@@ -1,0 +1,17 @@
+{
+    "dbName": "Eilat_DB",
+    "type": "mysql",
+    "connection": {
+        "host": "localhost",
+        "port": 3306,
+        "username": "root",
+        "password": "password",
+        "database": "mydatabase"
+    },
+
+    "about": {
+        "name": "Ilay's Database",
+        "date": "2019-01-01",
+        "description": "This is the main database of EILAT"
+    }
+}

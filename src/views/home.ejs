@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Design Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #212529;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #007bff;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .special-link {
+            background-color: #28a745;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .special-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .special-link:hover::before {
+            left: 100%;
+        }
+
+        .special-link:hover {
+            background-color: #218838;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .component {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .component:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .component h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .component p {
+            margin: 10px 0 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #dee2e6;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Design Page</h1>
+            <nav></nav>
+        </header>
+
+        <div class="content">
+            <p>Welcome to my advanced design page! This is an example of a professional and polished design for your webpage.</p>
+
+            <div class="component">
+                <h2>Component 1</h2>
+                <p>This is a reusable component that you can use throughout your webpage.</p>
+            </div>
+
+            <div class="component">
+                <h2>Component 2</h2>
+                <p>This is another reusable component that adds more functionality to your webpage.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

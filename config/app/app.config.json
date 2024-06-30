@@ -1,0 +1,91 @@
+{  "name": "p9",
+  "version": "2.0.0",
+    "port": 3316,
+    "appData": {
+        "pages": [
+            {"name": "Home", "url": "/home", "ext": "html"},
+            {"name": "Error", "url": "/error", "ext": "html"},
+            {"name": "Login", "url": "/login", "ext": "html"},
+            {"name": "Register", "url": "/register", "ext": "html"},
+            {"name": "Contact", "url": "/contact", "ext": "html"},
+            {"name": "About", "url": "/about", "ext": "html"}
+        ],
+        "description": {
+            "credits": {
+                "owner": [
+                    {
+                        "name": "Ilay",
+                        "age": 21,
+                        "isMale": true
+                    }
+                ],
+                "management": [
+                    {
+                        "name": "Felix", 
+                        "age": 23,
+                        "isMale": true
+                    }
+                ],
+                "development": [
+                    {
+                        "name": "Yael",
+                        "age": 21,
+                        "isMale": false
+                    },
+                    {
+                        "name": "Roni",
+                        "age": 25,
+                        "isMale": false
+                    }
+                ],
+                "design": [
+                    {
+                        "name": "Shir",
+                        "age": 22,
+                        "isMale": false
+                    },
+                    {
+                        "name": "Yarden",
+                        "age": 23,
+                        "isMale": false
+                    }
+                ], 
+                "advertisement": [
+                    {
+                    "name": "Ella",
+                    "age": 22,
+                    "isMale": false
+                    },
+                    {
+                    "name": "Amit",
+                    "age": 20,
+                    "isMale": true
+                    }
+                ]
+            },
+            "description": {
+                "owner": "Ilay's App",
+                "date": "2020-12-01",
+                "description": "This is the officail application of EILATTTTTT !!!"
+            }
+        }    
+    },
+
+    "database": {
+        "tables": {
+            "users": {
+                "data": [
+                    { "id": "1", "name": "John Doe", "isPremium": false, "token": "1_J", "isOnline": true},
+                    { "id": "2", "name": "Mary Jane", "isPremium": true, "token": "", "isOnline": false},
+                    { "id": "3", "name": "Peter Parker", "isPremium": false, "token": "", "isOnline": false},
+                    { "id": "4", "name": "Clark Kent", "isPremium": true, "token": "", "isOnline": false},
+                    { "id": "5", "name": "Bruce Wayne", "isPremium": false, "token": "", "isOnline": false}
+                ]
+            }
+        }
+    }
+
+
+
+
+}

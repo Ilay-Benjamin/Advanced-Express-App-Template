@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "target": "ES2017",
+        "rootDir": ".",
+        "moduleResolution": "node",
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+    },
+    "ts-node": {
+        "esm": true,
+        "experimentalSpecifierResolution": "node"
+    },
+    "exclude": [
+        "node_modules", 
+        "public",
+        "build",
+        "static",
+        "logs",
+        "tests",
+        "dist",
+        "config"
+    ]
+}

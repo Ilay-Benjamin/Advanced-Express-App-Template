@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <style>
+        .profile-info {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-info h2 {
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .profile-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .profile-info strong {
+            font-weight: bold;
+        }
+
+        .profile-info .info-label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        .profile-info .info-value {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .profile-info .info-row {
+            margin-bottom: 10px;
+        }
+
+        .profile-info .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .profile-info .info-row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .profile-info .info-row .info-label,
+        .profile-info .info-row .info-value {
+            float: left;
+        }
+
+        .profile-info .info-row .info-label {
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .profile-info .info-row .info-value {
+            text-align: left;
+        }
+
+        /* Additional styles for a prettier look */
+        .profile-info {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .profile-info {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Additional styles for a prettier look */
+        .profile-info {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to your Profile</h1>
+    <p>Here, you can view and edit your profile information.</p>
+
+    <div class="profile-info">
+        <h2>Personal Information</h2>
+        <p><strong>ID:</strong> <%= profile.id %></p>
+        <p><strong>Name:</strong> <%= profile.name %></p>
+        <p><strong>Subscription</strong> <%= profile.isPremium %> ? 'Premium' : 'Free' %></p>
+        <p><strong>Status</strong> <%= profile.isOnline ? 'Online' : 'Offline' %></p>
+        <p><strong>Token:</strong> <%= profile.token %></p>
+    </div>
+
+    <!-- Add more HTML content for the profile page -->
+
+</body>
+</html>
